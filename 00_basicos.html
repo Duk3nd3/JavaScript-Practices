@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fundamentos JavaScript</title>
+	</head>
+	<body>
+		<h1>Fundamentos JavaScript</h1>
+		<script>
+			/* **********  JavaScript: 1. Variables: var 🥊VS🥊 let  ********** */
+
+			/* 
+    var hola = "Hola Mundo";
+    let hello = "Hello World";
+    console.log(hola);
+    console.log(hello);
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello); */
+
+			//Ambito de bloque
+
+			//Esto es un bloque - comentario de una linea
+
+			/*
+    Esto
+    es
+    un
+    comentario
+    de
+    varias
+    líneas */
+
+			/* console.log ("****************var*****************");
+    var musica = "Rock";
+    console.log("Variable Música antes del Bloque", musica);
+
+    {
+      var musica = "Pop";
+      console.log("Variable Música dentro del Bloque", musica);
+    }
+
+    console.log("Variable Música después del Bloque", musica);
+
+    console.log("****************let*****************");
+
+    let musica2 = "Rock";
+    console.log("Variable Música antes del Bloque", musica2);
+
+    {
+      let musica2 = "Pop";
+      console.log("Variable Música dentro del Bloque", musica2);
+    }
+
+    console.log("Variable Música después del Bloque", musica2); */
+
+			/* ********** JavaScript: 2. Constantes (const) ********** */
+
+			/*  
+    let a;
+    const PI = 3.1416;
+    //const NUEVE;
+    console.log(PI);
+    //PI = 3.15;
+    a = "duk3nd3";
+    console.log(a);
+    const objeto = {
+        nombre: "Juan",
+        edad: 40
+     }
+     const colores = ["blanco", "negro", "azul"];
+     console.log(objeto);
+     console.log(colores);
+     objeto.correo = "duk3nd3@gmail.com";
+     colores.push("anaranjado");
+     console.log(objeto);
+     console.log(colores); */
+
+			/* ********** JavaScript: 3. Cadenas de Texto (Strings) ********** */
+
+			/*
+
+    //Cadenas de Texto aka Strings
+
+    let nombre = "Juan";
+    let apellido = 'Vargas';
+    let saludo = new String("Hola Mundo");
+    let lorem = "       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, et dolorum. Adipisci sequi, voluptates accusamus earum magnam non pariatur odit consequuntur dicta modi. Quam soluta aliquid nam ea quod dolore.      ";
+    console.log(nombre, apellido, saludo);
+    console.log(
+        nombre.length,
+        apellido.length,
+        saludo.length,
+        nombre.toUpperCase(),
+        apellido.toLowerCase(),
+        lorem.includes("amet"),
+        lorem.includes("juan"),
+        lorem,
+        lorem.trim(),
+        lorem.split(" "),
+        lorem.split(",")
+    );
+
+    */
+
+			/* ********** JavaScript: 4. Template Strings  ********** */
+
+			/* let nombre = "Juan";
+    let apellido = "Vargas";
+    */
+			//Concatenación
+			//let saludo = "Hola mi nombre es " + nombre + " " + apellido + ".";
+			//console.log(saludo);
+
+			//Interpolción de variables
+			//Template String
+			/* let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+    console.log(saludo2);
+    let ul = "<ul>< li > Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul > ";
+    console.log(ul);
+    let ul2 = `
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    `;
+        console.log(ul2);
+        let ul3 = "<ul>";
+        ul3 += "<li> Primavera</li>";
+        ul3 += "<li>Verano</li>";
+        ul3 += "<li>Otoño</li>";
+        ul3 += "<li>Invierno</li>";
+        ul3 += "</ul>";
+        console.log(ul3);
+    */
+
+			/* **********  JavaScript: 5. Números (Numbers)  ********** */
+
+			/* 
+    let a = 2;
+    let b = new Number(1);
+    let c = 7.19;
+    let d = "5.6";
+    console.log(a, b);
+    console.log(c.toFixed(1));
+    console.log(c.toFixed(5));
+    console.log(parseInt(c));
+    console.log(parseFloat(c));
+    console.log(typeof c, typeof d);
+    console.log(a + b);
+    console.log(c + parseInt(d));
+    console.log(c + parseFloat(d));
+    console.log(c + Number.parseInt(d));
+    console.log(c + Number.parseFloat(d)); 
+    
+    */
+		</script>
+	</body>
+</html>
