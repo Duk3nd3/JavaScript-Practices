@@ -10,6 +10,7 @@
 		<h1>Fundamentos JavaScript</h1>
 		<h2>El codigo se encuentra comentado</h2>
 		<h3>00_basicos</h3>
+		<h4>Trabajamos con ejemplos sobre la consola</h4>
 		<script>
 			/* **********  JavaScript: 1. Variables: var 🥊VS🥊 let  ********** */
 
@@ -293,15 +294,15 @@
     console.log(c);
  */
 			/* dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos */
-			/*     const jon = {
-          nombre: "Jon",
+			/*     const dukend3 = {
+          nombre: "dukend3",
           apellido: "MirCha",
           edad: 35,
-          pasatiempos: ["Correr", "Hacer ejercicio", "Dar clases"],
+          pasatiempos: ["Anda en bici", "Programar", "Jugar Videojuegos"],
           soltero: false,
           contacto: {
-            email: "jonmircha@gmail.com",
-            twitter: "@jonmircha",
+            email: "dukend3@gmail.com",
+            twitter: "@dukend3",
             movil: "5215512345678"
           },
           saludar: function () {
@@ -311,23 +312,23 @@
             console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter.`)
           }
         }
-        console.log(jon);
-        console.log(jon["nombre"]);
-        console.log(jon["apellido"]);
-        console.log(jon.nombre);
-        console.log(jon.apellido);
-        console.log(jon.edad);
-        console.log(jon.soltero);
-        console.log(jon.pasatiempos);
-        console.log(jon.pasatiempos[1]);
-        console.log(jon.contacto);
-        console.log(jon.contacto.twitter);
-        jon.saludar();
-        jon.decirMiNombre();
-        console.log(Object.keys(jon));
-        console.log(Object.values(jon));
-        console.log(jon.hasOwnProperty("nombre"));
-        console.log(jon.hasOwnProperty("nacimiento"));
+        console.log(dukend3);
+        console.log(dukend3["nombre"]);
+        console.log(dukend3["apellido"]);
+        console.log(dukend3.nombre);
+        console.log(dukend3.apellido);
+        console.log(dukend3.edad);
+        console.log(dukend3.soltero);
+        console.log(dukend3.pasatiempos);
+        console.log(dukend3.pasatiempos[1]);
+        console.log(dukend3.contacto);
+        console.log(dukend3.contacto.twitter);
+        dukend3.saludar();
+        dukend3.decirMiNombre();
+        console.log(Object.keys(dukend3));
+        console.log(Object.values(dukend3));
+        console.log(dukend3.hasOwnProperty("nombre"));
+        console.log(dukend3.hasOwnProperty("nacimiento"));
      */
 
 			/* ********** JavaScript: 13. Tipos de Operadores ********** */
@@ -516,13 +517,13 @@
     for (let i = 0; i < numeros.length; i++) {
       console.log(numeros[i]);
     }
-    const jon = {
-      nombre: "Jon",
-      apellido: "MirCha",
-      edad: 35
+    const dukend3 = {
+      nombre: "duke",
+      apellido: "end3",
+      edad: 40
     }
-    for (const propiedad in jon) {
-      console.log(`Key: ${propiedad}, Value: ${jon[propiedad]}`);
+    for (const propiedad in dukend3) {
+      console.log(`Key: ${propiedad}, Value: ${dukend3[propiedad]}`);
     }
     for (const elemento of numeros) {
       console.log(elemento);
@@ -533,6 +534,29 @@
     } 
     
     */
+
+			/* ********** JavaScript: 16. Manejo de Errores ********** */
+			/*  try {
+       console.log("En el Try se agrega el código a evaluar");
+       noExiste;
+       console.log("Segundo mensaje en el try");
+     } catch (error) {
+       console.log("Catch, captura cualquier error surgido o lanzado en el try");
+       console.log(error);
+     } finally {
+       console.log("El bloque finally se ejecutará siempre al final de unbloque try-catch");
+     }
+     try {
+       let numero = "y";
+       if (isNaN(numero)) {
+         throw new Error("El caractér introducido no es un Número");
+       }
+       console.log(numero * numero);
+     } catch (error) {
+       console.log(`Se produjo el siguiente error: ${error}`);
+     } 
+     
+     */
 		</script>
 	</body>
 </html>
