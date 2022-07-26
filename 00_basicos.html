@@ -919,8 +919,8 @@
     console.log(fecha.getUTCDate());
     console.log(fecha.getUTCHours());
     console.log(Date.now());
-    let cumpleJon = new Date(1984, 4, 23);
-    console.log(cumpleJon); 
+    let cumpleJuanMa = new Date(1982, 2, 14);
+    console.log(cumpleJuanMa); 
     
     */
 
@@ -949,7 +949,7 @@
        nombre = nombre || "Desconocido";
        console.log(`Hola ${nombre}`);
      }
-     saludar("Jon");
+     saludar("JuanMa");
      saludar();
      console.log("cadena" || "Valor de la derecha");
      console.log(19 || "Valor de la derecha");
@@ -975,6 +975,83 @@
      console.log({} && "Valor de la derecha"); 
      
      */
+
+			/* **********  JavaScript: 30. alert, confirm y prompt  ********** */
+			//console.log(window);
+			//alert("Hola esto es una alerta");
+			//confirm("Hola esto es una confirmación");
+			//prompt("Hola esto es un aviso y le permite al usuario ingresar un valor");
+
+			/* let alerta = alert("Hola esto es una alerta"),
+      confirmacion = confirm("Hola esto es una confirmación"),
+      aviso = prompt("Hola esto es un aviso y le permite al usuario ingresar un valor");
+    console.log(alerta);
+    console.log(confirmacion);
+    console.log(aviso);
+
+ */
+
+			/* ********** JavaScript: 31. Expresiones Regulares ********** */
+
+			/*
+     Expresiones Regulares
+        Son una secuencia de caracteres que forma un patrón de búsqueda, principalmente utilizada para la búsqueda de patrones de cadenas de caracteres.
+        https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular
+        https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+    */
+
+			/*  let cadena = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga cupiditate dolores saepe, praesentium sit eaque recusandae id sapiente similique, laudantium voluptatum perferendis ea iure ad odio doloremque earum voluptate.";
+     let expReg = new RegExp("lorem", "ig");
+     console.log(expReg.test(cadena));
+     console.log(expReg.exec(cadena));
+     let expReg2 = /lorem{1,}/ig;
+     console.log(expReg2.test(cadena));
+     console.log(expReg2.exec(cadena)); 
+     
+     */
+
+			/* ********** JavaScript: 32. Funciones Anónimas Autoejecutables ********** */
+
+			/*    //Función Anónima Autoejecutables
+
+       (function () {
+         console.log("Mi primer IIFE");
+       })();
+
+       (function (d, w, c) {
+         console.log("Mi segunda IIFE");
+         console.log(d);
+         console.log(w);
+         c.log("Este es un console.log")
+       })(document, window, console);
+
+       //Formas de escribir las funciones Anónimas Autoejecutables
+
+       //Clásica
+
+       (function () {
+         console.log('versión Clásica')
+       })();
+
+       //La Crockford (JavaScript The Good Parts)
+
+       ((function () {
+         console.log('versión Crockford')
+       })());
+
+       //Unaria
+
+       +function () {
+         console.log('versión Unaria')
+       }();
+
+       //Facebook
+       
+       !function () {
+         console.log('versión Facebook')
+       }(); 
+       
+       */
 		</script>
 	</body>
 </html>
